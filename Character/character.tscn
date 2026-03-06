@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_k3002"]
 [ext_resource type="Script" uid="uid://b8pj83oe3l018" path="res://Character/character_body_2d.gd" id="1_nwtvh"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jkkns"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwtvh"]
+size = Vector2(131, 130)
 
 [node name="Character" type="Node2D" unique_id=1442803798]
 
@@ -14,4 +15,5 @@ script = ExtResource("1_nwtvh")
 texture = ExtResource("1_k3002")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2007931080]
-shape = SubResource("CapsuleShape2D_jkkns")
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_nwtvh")

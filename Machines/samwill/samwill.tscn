@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cfuk07yte1qds"]
+
+[ext_resource type="Script" uid="uid://bo4e8ovtk0i8m" path="res://Machines/samwill/area_2d.gd" id="1_j8fmu"]
+[ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_x2156"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2156"]
+size = Vector2(294, 233.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j8fmu"]
+size = Vector2(129, 127)
+
+[node name="Samwill" type="Node2D" unique_id=1356579457]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=959209304]
+modulate = Color(0.11372549, 0.14509805, 1, 1)
+texture = ExtResource("1_x2156")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=890539472]
+script = ExtResource("1_j8fmu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1583634671]
+shape = SubResource("RectangleShape2D_x2156")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2046958099]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=690923793]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_j8fmu")
+
+[node name="Control" type="Control" parent="." unique_id=870771173]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control" unique_id=528891515]
+layout_mode = 0
+offset_left = -86.0
+offset_top = -88.0
+offset_right = -73.0
+offset_bottom = -65.0
+text = "E"
+
+[node name="Panel" type="Panel" parent="Control" unique_id=342908985]
+layout_mode = 0
+offset_right = 115.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control/Panel" unique_id=1423632702]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Interface"
+
+[node name="Button" type="Button" parent="Control/Panel" unique_id=208968550]
+layout_mode = 0
+offset_left = 98.0
+offset_right = 115.0
+offset_bottom = 31.0
+text = "x"
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
