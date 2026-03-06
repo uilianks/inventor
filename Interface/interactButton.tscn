@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://baouljewog2tf"]
+
+[ext_resource type="StyleBox" uid="uid://diba6mwlj7tdl" path="res://Assets/StyleSet/interactButton.tres" id="1_7p8ui"]
+
+[node name="InteractButton" type="Control" unique_id=604533011]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=2028593991]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = ExtResource("1_7p8ui")
+
+[node name="Label" type="Label" parent="Panel" unique_id=2044956533]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.8748982, 0.8826496, 0.87362605, 1)
+text = "E"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bo4e8ovtk0i8m" path="res://Machines/samwill/area_2d.gd" id="1_j8fmu"]
 [ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_x2156"]
+[ext_resource type="PackedScene" uid="uid://baouljewog2tf" path="res://Interface/interactButton.tscn" id="4_kk3g2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x2156"]
 size = Vector2(294, 233.5)
@@ -33,13 +34,8 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Label" type="Label" parent="Control" unique_id=528891515]
-layout_mode = 0
-offset_left = -86.0
-offset_top = -88.0
-offset_right = -73.0
-offset_bottom = -65.0
-text = "E"
+[node name="InteractButton" parent="Control" unique_id=604533011 instance=ExtResource("4_kk3g2")]
+layout_mode = 1
 
 [node name="Panel" type="Panel" parent="Control" unique_id=342908985]
 layout_mode = 0

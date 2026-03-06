@@ -6,6 +6,7 @@
 [node name="World" type="Node2D" unique_id=1977388496]
 
 [node name="Character" parent="." unique_id=1442803798 instance=ExtResource("1_62w18")]
+position = Vector2(405, 260)
 
 [node name="Samwill" parent="." unique_id=1356579457 instance=ExtResource("2_8a836")]
 position = Vector2(725, 263)
