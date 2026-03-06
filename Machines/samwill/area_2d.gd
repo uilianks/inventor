@@ -1,8 +1,8 @@
 extends Area2D
 
 @onready var label = $"../Control/InteractButton"
-@onready var panel = $"../Control/Panel"
-@onready var btn_close = $"../Control/Panel/Button"
+@onready var panel = $"../Control/SamwillInterface/Panel"
+@onready var btn_close = $"../Control/SamwillInterface/Panel/VBoxContainer/HBoxContainer/Button"
 
 func _ready() -> void:
 	label.hide()

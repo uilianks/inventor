@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cfuk07yte1qds"]
 
-[ext_resource type="Script" uid="uid://bo4e8ovtk0i8m" path="res://Machines/samwill/area_2d.gd" id="1_j8fmu"]
+[ext_resource type="Script" uid="uid://bo4e8ovtk0i8m" path="res://Machines/Samwill/area_2d.gd" id="1_j8fmu"]
 [ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_x2156"]
-[ext_resource type="PackedScene" uid="uid://baouljewog2tf" path="res://Interface/interactButton.tscn" id="4_kk3g2"]
+[ext_resource type="PackedScene" uid="uid://csoar7gs1crfa" path="res://Interface/SamwillInterface/samwillInterface.tscn" id="4_a2p6a"]
+[ext_resource type="PackedScene" uid="uid://baouljewog2tf" path="res://Interface/InteractButton/interactButton.tscn" id="4_kk3g2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x2156"]
 size = Vector2(294, 233.5)
@@ -37,23 +38,12 @@ offset_bottom = 40.0
 [node name="InteractButton" parent="Control" unique_id=604533011 instance=ExtResource("4_kk3g2")]
 layout_mode = 1
 
-[node name="Panel" type="Panel" parent="Control" unique_id=342908985]
-layout_mode = 0
-offset_right = 115.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="Control/Panel" unique_id=1423632702]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Interface"
-
-[node name="Button" type="Button" parent="Control/Panel" unique_id=208968550]
-layout_mode = 0
-offset_left = 98.0
-offset_right = 115.0
-offset_bottom = 31.0
-text = "x"
+[node name="SamwillInterface" parent="Control" unique_id=1813281175 instance=ExtResource("4_a2p6a")]
+layout_mode = 1
+offset_left = -157.0
+offset_top = 117.0
+offset_right = -157.0
+offset_bottom = 117.0
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

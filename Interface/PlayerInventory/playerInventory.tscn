@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://c3ilxwcs8q5rc"]
+
+[ext_resource type="StyleBox" uid="uid://da3x2agf4tip6" path="res://Assets/StyleSet/inventorySlot.tres" id="1_q5cec"]
+
+[node name="PlayerInventory" type="CanvasLayer" unique_id=1132046293]
+
+[node name="Panel" type="Panel" parent="." unique_id=60290131]
+offset_right = 111.0
+offset_bottom = 83.0
+
+[node name="GridContainer" type="GridContainer" parent="Panel" unique_id=604468902]
+layout_mode = 0
+offset_right = 112.0
+offset_bottom = 83.0
+columns = 4
+
+[node name="Panel3" type="Panel" parent="Panel/GridContainer" unique_id=353312868]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel2" type="Panel" parent="Panel/GridContainer" unique_id=56182037]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel7" type="Panel" parent="Panel/GridContainer" unique_id=1011962036]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel8" type="Panel" parent="Panel/GridContainer" unique_id=879829434]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel6" type="Panel" parent="Panel/GridContainer" unique_id=184296515]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel5" type="Panel" parent="Panel/GridContainer" unique_id=1565169472]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel9" type="Panel" parent="Panel/GridContainer" unique_id=2104969880]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel4" type="Panel" parent="Panel/GridContainer" unique_id=524812284]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel10" type="Panel" parent="Panel/GridContainer" unique_id=1024066063]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel11" type="Panel" parent="Panel/GridContainer" unique_id=1655448065]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel12" type="Panel" parent="Panel/GridContainer" unique_id=382795259]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")
+
+[node name="Panel" type="Panel" parent="Panel/GridContainer" unique_id=161069436]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("1_q5cec")

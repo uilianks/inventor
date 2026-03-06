@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bgufk2poy4tcs"]
 
 [ext_resource type="PackedScene" uid="uid://bjcc4der16kyc" path="res://Character/character.tscn" id="1_62w18"]
-[ext_resource type="PackedScene" uid="uid://cfuk07yte1qds" path="res://Machines/samwill/samwill.tscn" id="2_8a836"]
+[ext_resource type="PackedScene" uid="uid://cfuk07yte1qds" path="res://Machines/Samwill/samwill.tscn" id="2_8a836"]
 
 [node name="World" type="Node2D" unique_id=1977388496]
 
