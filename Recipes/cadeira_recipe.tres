@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://dc8h1xh134d7n"]
+
+[ext_resource type="Script" uid="uid://dm0rjppvtur1t" path="res://Recipes/recipe.gd" id="1_gnk4d"]
+[ext_resource type="Script" uid="uid://bk6cattnbekp2" path="res://Recipes/recipe_ingredient.gd" id="1_klcyd"]
+[ext_resource type="Resource" uid="uid://pu1nnabn08ln" path="res://Items/cadeira.tres" id="1_lwaca"]
+[ext_resource type="Resource" uid="uid://dylt76bb6ki0l" path="res://Items/ferro.tres" id="2_hujn2"]
+
+[sub_resource type="Resource" id="Resource_du3om"]
+script = ExtResource("1_klcyd")
+item = ExtResource("2_hujn2")
+metadata/_custom_type_script = "uid://bk6cattnbekp2"
+
+[resource]
+script = ExtResource("1_gnk4d")
+name = "Cadeira"
+output_item = ExtResource("1_lwaca")
+ingredients = Array[ExtResource("1_klcyd")]([SubResource("Resource_du3om")])
+metadata/_custom_type_script = "uid://dm0rjppvtur1t"

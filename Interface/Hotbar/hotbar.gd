@@ -6,13 +6,16 @@ const SLOT_SIZE = 36
 const HOTBAR_LINES = 1
 const TOTAL_LINES = 4
 
+const MADEIRA = preload("res://Items/madeira.tres")
+const FERRO = preload("res://Items/ferro.tres")
+
 var is_open = false
 
 func _ready() -> void:
-	$GridContainer/Slot.item = "Madeira"
+	$GridContainer/Slot.item = MADEIRA
 	$GridContainer/Slot.quantidade = 3
 	$GridContainer/Slot.call("_update")
-	$GridContainer/Slot2.item = "Ferro"
+	$GridContainer/Slot2.item = FERRO
 	$GridContainer/Slot2.quantidade = 3
 	$GridContainer/Slot2.call("_update")
 

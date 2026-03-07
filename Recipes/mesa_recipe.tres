@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://d0v04rqmkpgp1"]
+
+[ext_resource type="Script" uid="uid://bk6cattnbekp2" path="res://Recipes/recipe_ingredient.gd" id="1_wckf2"]
+[ext_resource type="Resource" uid="uid://ca5xdtde6cdob" path="res://Items/madeira.tres" id="2_mbg7x"]
+[ext_resource type="Script" uid="uid://dm0rjppvtur1t" path="res://Recipes/recipe.gd" id="2_v14mi"]
+[ext_resource type="Resource" uid="uid://c8ag5hcneulpi" path="res://Items/mesa.tres" id="3_8t04h"]
+[ext_resource type="Resource" uid="uid://pu1nnabn08ln" path="res://Items/cadeira.tres" id="3_g0vdx"]
+
+[sub_resource type="Resource" id="Resource_g0vdx"]
+script = ExtResource("1_wckf2")
+item = ExtResource("2_mbg7x")
+amount = 3
+metadata/_custom_type_script = "uid://bk6cattnbekp2"
+
+[sub_resource type="Resource" id="Resource_0q462"]
+script = ExtResource("1_wckf2")
+item = ExtResource("3_g0vdx")
+metadata/_custom_type_script = "uid://bk6cattnbekp2"
+
+[resource]
+script = ExtResource("2_v14mi")
+name = "Mesa"
+time = 1.0
+output_item = ExtResource("3_8t04h")
+ingredients = Array[ExtResource("1_wckf2")]([SubResource("Resource_g0vdx"), SubResource("Resource_0q462")])
+metadata/_custom_type_script = "uid://dm0rjppvtur1t"
