@@ -11,10 +11,10 @@ var is_open = false
 func _ready() -> void:
 	$GridContainer/Slot.item = "Madeira"
 	$GridContainer/Slot.quantidade = 3
-	$GridContainer/Slot.call("_atualizar")
+	$GridContainer/Slot.call("_update")
 	$GridContainer/Slot2.item = "Ferro"
 	$GridContainer/Slot2.quantidade = 3
-	$GridContainer/Slot2.call("_atualizar")
+	$GridContainer/Slot2.call("_update")
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_focus_next"):

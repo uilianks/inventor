@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ca4mam27o7tie" path="res://Interface/SamwillInterface/craftButton.tscn" id="2_bpgci"]
 [ext_resource type="PackedScene" uid="uid://bwn8hhbmllfo8" path="res://Interface/SamwillInterface/recipes.tscn" id="2_hcytw"]
+[ext_resource type="Script" uid="uid://b3jvqkvem5hv5" path="res://Interface/SamwillInterface/craft_button.gd" id="3_pq1n3"]
 
 [node name="SamwillInterface" type="Control" unique_id=1813281175]
 layout_mode = 3
@@ -51,3 +52,4 @@ size_flags_horizontal = 6
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 size_flags_vertical = 10
+script = ExtResource("3_pq1n3")

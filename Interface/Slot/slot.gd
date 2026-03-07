@@ -8,9 +8,9 @@ var quantidade = 0
 signal slot_atualizado
 
 func _ready() -> void:
-	_atualizar()
+	_update()
 
-func _atualizar() -> void:
+func _update() -> void:
 	if item == null or quantidade == 0:
 		if item_aceito != "":
 			$Label.text = item_aceito + "\n(0/" + str(quantidade_necessaria) + ")"
@@ -50,6 +50,6 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 		quantidade = outro.quantidade
 		outro.item = temp_item
 		outro.quantidade = temp_qtd
-	_atualizar()
-	outro._atualizar()
+	_update()
+	outro._update()
 	slot_atualizado.emit()

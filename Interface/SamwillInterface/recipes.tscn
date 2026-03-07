@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bwn8hhbmllfo8"]
 
 [ext_resource type="PackedScene" uid="uid://rpx7sqm7kuo6" path="res://Interface/Slot/slot.tscn" id="1_rimfx"]
-[ext_resource type="Script" uid="uid://u5nsts8o48je" path="res://Interface/SamwillInterface/recipes.gd" id="1_yxui0"]
 
 [node name="Recipes" type="Control" unique_id=161330163]
 custom_minimum_size = Vector2(0, 40)
@@ -15,7 +14,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
-script = ExtResource("1_yxui0")
 
 [node name="OptionButton" type="OptionButton" parent="." unique_id=711867103]
 layout_mode = 0
@@ -43,14 +41,10 @@ layout_mode = 2
 size_flags_horizontal = 2
 text = "Input"
 
-[node name="Slot2" parent="Mesa/Input" unique_id=1592388102 instance=ExtResource("1_rimfx")]
+[node name="Slot" parent="Mesa/Input" unique_id=1592388102 instance=ExtResource("1_rimfx")]
 layout_mode = 2
 item_aceito = "Madeira"
 quantidade_necessaria = 3
-
-[node name="Slot" parent="Mesa/Input" unique_id=58157561 instance=ExtResource("1_rimfx")]
-layout_mode = 2
-item_aceito = "Madeira"
 
 [node name="Output" type="VBoxContainer" parent="Mesa" unique_id=557871154]
 layout_mode = 2
@@ -81,6 +75,7 @@ text = "Input"
 
 [node name="Slot" parent="Cadeira/Input" unique_id=1633714139 instance=ExtResource("1_rimfx")]
 layout_mode = 2
+item_aceito = "Ferro"
 
 [node name="Output" type="VBoxContainer" parent="Cadeira" unique_id=30790918]
 layout_mode = 2
@@ -93,5 +88,3 @@ text = "Output"
 
 [node name="Slot" parent="Cadeira/Output" unique_id=1496123846 instance=ExtResource("1_rimfx")]
 layout_mode = 2
-
-[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
