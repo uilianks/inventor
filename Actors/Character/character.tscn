@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bjcc4der16kyc"]
 
 [ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_k3002"]
-[ext_resource type="Script" uid="uid://b8pj83oe3l018" path="res://Character/character_body_2d.gd" id="1_nwtvh"]
-[ext_resource type="Script" uid="uid://dl0lgw8mbr127" path="res://Character/character.gd" id="1_twwou"]
+[ext_resource type="Script" uid="uid://b8pj83oe3l018" path="res://Actors/Character/character_body_2d.gd" id="1_nwtvh"]
+[ext_resource type="Script" uid="uid://dl0lgw8mbr127" path="res://Actors/Character/character.gd" id="1_twwou"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nwtvh"]
 size = Vector2(131, 130)

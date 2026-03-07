@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ca4mam27o7tie"]
 
-[ext_resource type="Script" uid="uid://b3jvqkvem5hv5" path="res://Interface/SamwillInterface/craft_button.gd" id="1_6vqw0"]
+[ext_resource type="Script" uid="uid://b3jvqkvem5hv5" path="res://Interface/CraftButton/craft_button.gd" id="1_6vqw0"]
 [ext_resource type="Script" uid="uid://dm0rjppvtur1t" path="res://Recipes/recipe.gd" id="2_5v4mm"]
 [ext_resource type="Resource" uid="uid://d0v04rqmkpgp1" path="res://Recipes/mesa_recipe.tres" id="3_24a3v"]
 [ext_resource type="Resource" uid="uid://dc8h1xh134d7n" path="res://Recipes/cadeira_recipe.tres" id="4_24a3v"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bgufk2poy4tcs"]
 
-[ext_resource type="PackedScene" uid="uid://bjcc4der16kyc" path="res://Character/character.tscn" id="1_62w18"]
+[ext_resource type="PackedScene" uid="uid://bjcc4der16kyc" path="res://Actors/Character/character.tscn" id="1_62w18"]
 [ext_resource type="PackedScene" uid="uid://c5enm210o2srr" path="res://Interface/Hotbar/hotbar.tscn" id="1_j8job"]
 [ext_resource type="PackedScene" uid="uid://cfuk07yte1qds" path="res://Machines/Samwill/samwill.tscn" id="2_8a836"]
 

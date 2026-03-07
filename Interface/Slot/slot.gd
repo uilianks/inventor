@@ -25,10 +25,24 @@ func _update() -> void:
 func _get_drag_data(at_position: Vector2) -> Variant:
 	if item == null:
 		return null
+
 	var preview = Label.new()
-	preview.text = item.name + " x" + str(quantidade)
-	set_drag_preview(preview)
-	return self
+
+	if Input.is_key_pressed(KEY_SHIFT) and quantidade > 1:
+		var metade = int(quantidade / 2)
+		quantidade -= metade
+		_update()
+
+		var slot_temp = load("res://Interface/Slot/slot.tscn").instantiate()
+		slot_temp.item = item
+		slot_temp.quantidade = metade
+		preview.text = item.name + " x" + str(metade)
+		set_drag_preview(preview)
+		return slot_temp
+	else:
+		preview.text = item.name + " x" + str(quantidade)
+		set_drag_preview(preview)
+		return self
 
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 	if not data is Panel:

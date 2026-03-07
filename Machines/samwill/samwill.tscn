@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bo4e8ovtk0i8m" path="res://Machines/Samwill/area_2d.gd" id="1_j8fmu"]
 [ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_x2156"]
-[ext_resource type="PackedScene" uid="uid://csoar7gs1crfa" path="res://Interface/SamwillInterface/samwillInterface.tscn" id="4_a2p6a"]
+[ext_resource type="PackedScene" uid="uid://csoar7gs1crfa" path="res://Machines/Samwill/samwillInterface.tscn" id="4_a2p6a"]
 [ext_resource type="PackedScene" uid="uid://baouljewog2tf" path="res://Interface/InteractButton/interactButton.tscn" id="4_kk3g2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x2156"]
