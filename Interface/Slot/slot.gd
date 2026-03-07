@@ -22,7 +22,7 @@ func _update() -> void:
 		else:
 			$Label.text = item.name + "\nx" + str(quantidade)
 
-func _get_drag_data(at_position: Vector2) -> Variant:
+func _get_drag_data(_at_position: Vector2) -> Variant:
 	if item == null:
 		return null
 
@@ -44,7 +44,7 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 		set_drag_preview(preview)
 		return self
 
-func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
+func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 	if not data is Panel:
 		return false
 	if data.item == null:
@@ -53,7 +53,7 @@ func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 		return false
 	return true
 
-func _drop_data(at_position: Vector2, data: Variant) -> void:
+func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	var outro = data as Panel
 	if outro.item != null and item != null and outro.item.name == item.name:
 		quantidade += outro.quantidade
