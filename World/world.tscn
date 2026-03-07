@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://bgufk2poy4tcs"]
 
 [ext_resource type="PackedScene" uid="uid://bjcc4der16kyc" path="res://Character/character.tscn" id="1_62w18"]
+[ext_resource type="PackedScene" uid="uid://c5enm210o2srr" path="res://Interface/Hotbar/hotbar.tscn" id="1_j8job"]
 [ext_resource type="PackedScene" uid="uid://cfuk07yte1qds" path="res://Machines/Samwill/samwill.tscn" id="2_8a836"]
 
 [node name="World" type="Node2D" unique_id=1977388496]
 
+[node name="Hotbar" parent="." unique_id=1029398088 instance=ExtResource("1_j8job")]
+offset_left = 854.0
+offset_top = 1036.0
+offset_right = 854.0
+offset_bottom = 1036.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
 [node name="Character" parent="." unique_id=1442803798 instance=ExtResource("1_62w18")]
-position = Vector2(405, 260)
+position = Vector2(332, 345)
 
 [node name="Samwill" parent="." unique_id=1356579457 instance=ExtResource("2_8a836")]
 position = Vector2(725, 263)

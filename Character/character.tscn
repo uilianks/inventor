@@ -3,8 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://dnkd3q4vd74yd" path="res://Assets/icon.svg" id="1_k3002"]
 [ext_resource type="Script" uid="uid://b8pj83oe3l018" path="res://Character/character_body_2d.gd" id="1_nwtvh"]
 [ext_resource type="Script" uid="uid://dl0lgw8mbr127" path="res://Character/character.gd" id="1_twwou"]
-[ext_resource type="PackedScene" uid="uid://c3ilxwcs8q5rc" path="res://Interface/PlayerInventory/playerInventory.tscn" id="3_jkkns"]
-[ext_resource type="PackedScene" uid="uid://c5enm210o2srr" path="res://Interface/Hotbar/hotbar.tscn" id="5_a23tb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nwtvh"]
 size = Vector2(131, 130)
@@ -21,11 +19,3 @@ texture = ExtResource("1_k3002")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2007931080]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_nwtvh")
-
-[node name="PlayerInventory" parent="." unique_id=1132046293 instance=ExtResource("3_jkkns")]
-
-[node name="Hotbar" parent="." unique_id=1029398088 instance=ExtResource("5_a23tb")]
-offset_left = 443.0
-offset_top = 339.0
-offset_right = 443.0
-offset_bottom = 339.0

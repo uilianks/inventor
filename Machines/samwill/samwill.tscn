@@ -42,8 +42,8 @@ layout_mode = 1
 layout_mode = 1
 offset_left = -157.0
 offset_top = 117.0
-offset_right = -157.0
-offset_bottom = 117.0
+offset_right = 122.0
+offset_bottom = 375.0
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

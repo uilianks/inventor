@@ -2,8 +2,8 @@ extends Panel
 
 var item = null
 var quantidade = 0
-var item_aceito = null       # null = aceita qualquer coisa
-var quantidade_necessaria = 1
+@export var item_aceito: String = ""
+@export var quantidade_necessaria: int = 1
 
 signal slot_atualizado
 
@@ -12,12 +12,12 @@ func _ready() -> void:
 
 func _atualizar() -> void:
 	if item == null or quantidade == 0:
-		if item_aceito:
+		if item_aceito != "":
 			$Label.text = item_aceito + "\n(0/" + str(quantidade_necessaria) + ")"
 		else:
 			$Label.text = "[ ]"
 	else:
-		if item_aceito:
+		if item_aceito != "":
 			$Label.text = item + "\n(" + str(quantidade) + "/" + str(quantidade_necessaria) + ")"
 		else:
 			$Label.text = item + "\nx" + str(quantidade)
@@ -33,8 +33,7 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 	if not data is Panel:
 		return false
-	# Verifica se o item é aceito
-	if item_aceito != null and data.item != item_aceito:
+	if item_aceito != "" and data.item != item_aceito:
 		return false
 	return true
 
